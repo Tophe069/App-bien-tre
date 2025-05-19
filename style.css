@@ -1,0 +1,24 @@
+/* style.css : Ajustements spécifiques */
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #f0f4f8;
+}
+::-webkit-scrollbar-thumb {
+    background: #d1e2f3;
+    border-radius: 6px;
+}
+.card {
+    @apply shadow-lg rounded-2xl bg-white p-4 mb-4;
+}
+.navbar {
+    @apply fixed bottom-0 left-0 w-full bg-white shadow-lg flex justify-around items-center py-2 z-50;
+}
+.fab {
+    @apply fixed bottom-20 right-4 bg-blue-500 text-white rounded-full shadow-lg p-4 text-2xl hover:bg-blue-600 transition;
+}
+.toast {
+    @apply fixed bottom-28 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-2 rounded shadow-lg z-50 animate-bounce;
+}

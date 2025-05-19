@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendre soin de soi – Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-white to-green-100 min-h-screen">
+    <header class="flex items-center justify-between p-4">
+        <img src="assets/logo.png" alt="Logo" class="h-10">
+        <span class="font-bold text-xl">Bienvenue Tophe 😊</span>
+    </header>
+    <main class="p-4 pb-20">
+        <div class="card flex flex-col items-center">
+            <div class="text-lg font-semibold mb-2">Score Bien-être global</div>
+            <div class="rounded-full bg-blue-200 w-24 h-24 flex items-center justify-center text-4xl font-bold mb-2">82%</div>
+            <div class="grid grid-cols-2 gap-4 w-full mt-2">
+                <div class="flex flex-col items-center"><span>😊</span><span class="text-sm">Humeur</span></div>
+                <div class="flex flex-col items-center"><span>💧</span><span class="text-sm">Eau</span></div>
+                <div class="flex flex-col items-center"><span>👟</span><span class="text-sm">Pas</span></div>
+                <div class="flex flex-col items-center"><span>💤</span><span class="text-sm">Sommeil</span></div>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="font-semibold mb-2">Pensée positive</div>
+            <div class="italic text-gray-500">"J’ai profité du soleil aujourd’hui !" ☀️</div>
+        </div>
+        <button onclick="window.location.href='journal.html'" class="fab">+</button>
+    </main>
+    <nav class="navbar">
+        <a href="index.html" class="text-blue-500 font-bold">Accueil</a>
+        <a href="journal.html">Journal</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="stats.html">Stats</a>
+        <a href="ressources.html">Ressources</a>
+        <a href="communaute.html">Communauté</a>
+        <a href="profil.html">Profil</a>
+    </nav>
+    <script src="src/app.js"></script>
+</body>
+</html>

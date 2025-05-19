@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistiques – Prendre soin de soi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-white to-green-100 min-h-screen">
+    <header class="flex items-center justify-between p-4">
+        <button onclick="window.location.href='index.html'" class="text-blue-500 text-lg">&larr; Accueil</button>
+        <span class="font-bold text-xl">Statistiques</span>
+    </header>
+    <main class="p-4 pb-20">
+        <div class="card mb-4">
+            <div class="font-semibold mb-2">Évolution du bien-être</div>
+            <canvas id="wellbeingChart" width="350" height="150"></canvas>
+        </div>
+        <div class="card">
+            <button onclick="exportData()" class="bg-blue-500 text-white px-4 py-2 rounded">Exporter mes données (CSV)</button>
+        </div>
+    </main>
+    <nav class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="journal.html">Journal</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="stats.html" class="text-blue-500 font-bold">Stats</a>
+        <a href="ressources.html">Ressources</a>
+        <a href="communaute.html">Communauté</a>
+        <a href="profil.html">Profil</a>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="src/csv-utils.js"></script>
+    <script src="src/app.js"></script>
+    <script>
+        // Exemple de graphique (données à remplacer par vraies datas)
+        const ctx = document.getElementById('wellbeingChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim'],
+                datasets: [{
+                    label: 'Score Bien-être',
+                    data: [65, 70, 80, 85, 90, 85, 88],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: false,
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+
+        // Export CSV (stub, à relier à tes vraies datas)
+        function exportData() {
+            const data = [
+                { date: '2025-05-19', humeur: '😊', sommeil: 7, pas: 4200, eau: 6 }
+            ];
+            exportToCSV('bien-etre.csv', data);
+            showToast('CSV exporté !');
+        }
+    </script>
+</body>
+</html>

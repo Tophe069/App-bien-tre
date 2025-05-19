@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmes – Prendre soin de soi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-white to-green-100 min-h-screen">
+    <header class="flex items-center justify-between p-4">
+        <button onclick="window.location.href='index.html'" class="text-blue-500 text-lg">&larr; Accueil</button>
+        <span class="font-bold text-xl">Programmes & Routines</span>
+    </header>
+    <main class="p-4 pb-20">
+        <div class="card mb-4">
+            <div class="font-semibold">Programmes actifs</div>
+            <ul>
+                <li>🧘 Sérénité en 7 jours <span class="ml-2 text-xs text-green-600">3/7</span></li>
+                <li>💤 Mieux dormir <span class="ml-2 text-xs text-blue-600">En cours</span></li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="font-semibold mb-2">Tous les programmes</div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-green-200 rounded-xl p-4 flex flex-col items-center">
+                    <span class="text-2xl">🧘</span>
+                    <div>Sérénité</div>
+                </div>
+                <div class="bg-blue-200 rounded-xl p-4 flex flex-col items-center">
+                    <span class="text-2xl">💤</span>
+                    <div>Sommeil</div>
+                </div>
+                <div class="bg-yellow-200 rounded-xl p-4 flex flex-col items-center">
+                    <span class="text-2xl">🍏</span>
+                    <div>Nutrition</div>
+                </div>
+                <div class="bg-pink-200 rounded-xl p-4 flex flex-col items-center">
+                    <span class="text-2xl">🏃‍♂️</span>
+                    <div>Forme douce</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <nav class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="journal.html">Journal</a>
+        <a href="programmes.html" class="text-blue-500 font-bold">Programmes</a>
+        <a href="stats.html">Stats</a>
+        <a href="ressources.html">Ressources</a>
+        <a href="communaute.html">Communauté</a>
+        <a href="profil.html">Profil</a>
+    </nav>
+    <script src="src/app.js"></script>
+</body>
+</html>

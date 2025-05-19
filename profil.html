@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil – Prendre soin de soi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-white to-green-100 min-h-screen">
+    <header class="flex items-center justify-between p-4">
+        <button onclick="window.location.href='index.html'" class="text-blue-500 text-lg">&larr; Accueil</button>
+        <span class="font-bold text-xl">Profil</span>
+    </header>
+    <main class="p-4 pb-20">
+        <form class="card mb-4" id="profilForm">
+            <div class="mb-2">
+                <label class="font-semibold">Pseudo :</label>
+                <input type="text" name="pseudo" class="ml-2 border rounded p-1 w-1/2" value="Tophe">
+            </div>
+            <div class="mb-2">
+                <label class="font-semibold">Âge :</label>
+                <input type="number" name="age" class="ml-2 border rounded p-1 w-20" value="45">
+            </div>
+            <div class="mb-2">
+                <label class="font-semibold">Genre :</label>
+                <select name="genre" class="ml-2 border rounded p-1">
+                    <option>Homme</option>
+                    <option>Femme</option>
+                    <option>Autre</option>
+                </select>
+            </div>
+            <div class="mb-2">
+                <label class="font-semibold">Objectif principal :</label>
+                <select name="objectif" class="ml-2 border rounded p-1">
+                    <option>Forme physique</option>
+                    <option>Sommeil</option>
+                    <option>Bien-être mental</option>
+                </select>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded mt-2">Enregistrer</button>
+        </form>
+        <div class="card">
+            <div class="font-semibold">Gestion des données</div>
+            <button class="bg-green-500 text-white px-4 py-2 rounded mt-2">Importer (CSV)</button>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded mt-2 ml-2">Exporter (CSV)</button>
+        </div>
+    </main>
+    <nav class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="journal.html">Journal</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="stats.html">Stats</a>
+        <a href="ressources.html">Ressources</a>
+        <a href="communaute.html">Communauté</a>
+        <a href="profil.html" class="text-blue-500 font-bold">Profil</a>
+    </nav>
+    <script src="src/app.js"></script>
+</body>
+</html>

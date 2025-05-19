@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communauté – Prendre soin de soi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-white to-green-100 min-h-screen">
+    <header class="flex items-center justify-between p-4">
+        <button onclick="window.location.href='index.html'" class="text-blue-500 text-lg">&larr; Accueil</button>
+        <span class="font-bold text-xl">Communauté</span>
+    </header>
+    <main class="p-4 pb-20">
+        <div class="card mb-4">
+            <div class="font-semibold">Fil d’actualité</div>
+            <div class="mb-2 text-gray-500 text-sm">Bientôt disponible : partage de défis, encouragements, badges !</div>
+            <ul id="communityFeed">
+                <li>👏 Céline a terminé “Sérénité 7 jours” !</li>
+                <li>🏆 Adrien a bu 8 verres d’eau aujourd’hui !</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="font-semibold">Poster un message</div>
+            <form id="postForm">
+                <input type="text" placeholder="Ton message…" class="border rounded p-2 w-2/3" required>
+                <button class="bg-blue-500 text-white px-3 py-2 rounded ml-2" type="submit">Poster</button>
+            </form>
+        </div>
+    </main>
+    <nav class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="journal.html">Journal</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="stats.html">Stats</a>
+        <a href="ressources.html">Ressources</a>
+        <a href="communaute.html" class="text-blue-500 font-bold">Communauté</a>
+        <a href="profil.html">Profil</a>
+    </nav>
+    <script src="src/app.js"></script>
+</body>
+</html>
